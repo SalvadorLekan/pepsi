@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <title>Pepsi</title>
+  </head>
+  <body
+    class="flex flex-col transition ease-in-out bg-gray-400 md:h-screen text-white"
+  >
+    <nav class="flex justify-between items-center h-12 p-4">
+      <div>
+        <img
+          src="./assets/images/logo.png"
+          class="w-10 mt-3"
+          alt="pepsi logo"
+          srcset=""
+        />
+      </div>
+      <ul class="list-none flex">
+        <li class="inline-block m-3 text-lg">Home</li>
+        <li class="inline-block m-3 text-lg">Products</li>
+        <li class="inline-block m-3 text-lg">Something</li>
+        <li class="inline-block m-3 text-lg">Another</li>
+      </ul>
+    </nav>
+    <div
+      class="fixed flex flex-col h-screen top-0 justify-center right-0 w-5 mr-2"
+    >
+      <img
+        src="./assets/images/facebook.png"
+        class="py-2"
+        alt="facebook"
+        srcset=""
+      />
+      <img
+        src="./assets/images/instagram.png"
+        class="py-2"
+        alt="instagram"
+        srcset=""
+      />
+      <img
+        src="./assets/images/twitter.png"
+        class="py-2"
+        alt="twitter"
+        srcset=""
+      />
+    </div>
+    <div class="flex-grow grid md:grid-cols-2">
+      <div class="p-6 md:p-8">
+        <h1
+          class="text-6xl my-4 text-center md:text-left font-bold lg:text-8xl"
+        >
+          Just How You Like It!
+        </h1>
+        <p class="font-serif text-lg">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo
+          dignissimos ratione corporis magni sequi eos consequatur vero, autem
+          rerum, placeat labore, quasi aliquam quia id libero vel asperiores
+          doloremque deleniti?
+        </p>
+        <a
+          href="http://salvadorlekan.com.ng"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="inline-block bg-white text-blue-400 py-1 px-6 my-4 text-xl rounded-2xl"
+          >View All Products</a
+        >
+      </div>
+      <div id="images" class="flex flex-wrap justify-center">
+        <img
+          class="hidden"
+          id="blue"
+          src="./assets/images/pepsi001.png"
+          alt=""
+          srcset=""
+        />
+        <img
+          class="hidden"
+          id="red"
+          src="./assets/images/pepsi002.png"
+          alt=""
+          srcset=""
+        />
+        <img
+          class="hidden"
+          id="gray"
+          src="./assets/images/pepsi003.png"
+          alt=""
+          srcset=""
+        />
+      </div>
+    </div>
+    <div class="h-14 flex justify-center items-center">
+      <img
+        onclick="boom('blue')"
+        class="h-10 m-3 transform hover:-translate-y-1 hover:mt-0 hover:self-start"
+        src="./assets/images/pepsi001.png"
+        alt=""
+        srcset=""
+      />
+      <img
+        onclick="boom('red')"
+        class="h-10 m-3 transform hover:-translate-y-1 hover:"
+        src="./assets/images/pepsi002.png"
+        alt=""
+        srcset=""
+      />
+      <img
+        onclick="boom('gray')"
+        class="h-10 m-3 transform hover:-translate-y-1 hover:"
+        src="./assets/images/pepsi003.png"
+        alt=""
+        srcset=""
+      />
+    </div>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
